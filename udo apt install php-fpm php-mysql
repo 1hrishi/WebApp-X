@@ -1,0 +1,18 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Wed 2020-06-17 22:16:14 IST; 9s ago
+       Docs: man:nginx(8)
+    Process: 60627 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 60629 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 60644 (nginx)
+      Tasks: 5 (limit: 8512)
+     Memory: 3.8M
+     CGroup: /system.slice/nginx.service
+             ├─60644 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+             ├─60645 nginx: worker process
+             ├─60646 nginx: worker process
+             ├─60647 nginx: worker process
+             └─60648 nginx: worker process
+
+Jun 17 22:16:14 helios systemd[1]: Starting A high performance web server and a reverse proxy server...
+Jun 17 22:16:14 helios systemd[1]: Started A high performance web server and a reverse proxy server.
